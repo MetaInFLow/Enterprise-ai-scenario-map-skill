@@ -31,7 +31,7 @@ class CompanyResearcher:
         Returns:
             Dict: 包含调研框架和搜索问题清单的字典
         """
-        print(f"[调研] 正在生成 {self.company_name} 的调研框架...")
+        print(f"[调研] 正在生成 {self.company_name} 的调研框架...", file=sys.stderr)
         return self._generate_company_framework()
 
     def _generate_company_framework(self) -> Dict:
